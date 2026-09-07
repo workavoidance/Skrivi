@@ -1,7 +1,7 @@
 # Direct dependencies verified for the Windows/Python 3.14 release build.
 # Dependabot proposes updates; CI validates them before merge.
 faster-whisper==1.2.1
-huggingface-hub==1.29.0
+huggingface-hub==1.30.0
 numpy==2.5.2
 Pillow==12.3.0
 pynput==1.8.2
@@ -11,6 +11,6 @@ sounddevice==0.5.6
 tqdm==4.70.0
 pyinstaller==6.22.2
 pytest==9.1.1
-ruff==0.16.5
+ruff==0.16.6
 winrt-Windows.ApplicationModel==3.2.1
 winrt-runtime==3.2.1
