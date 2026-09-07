@@ -6,12 +6,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TAG = "v0.2.0-alpha.4"
 INSTALLER = f"Skrivi-{TAG}-windows-x64-setup.exe"
-PUBLIC_TAG = "v0.2.0-alpha.3"
-PUBLIC_INSTALLER = f"Skrivi-{PUBLIC_TAG}-windows-x64-setup.exe"
 PUBLIC_INSTALLER_URL = (
-    "https://github.com/workavoidance/Skrivi/releases/download/"
-    f"{PUBLIC_TAG}/{PUBLIC_INSTALLER}"
+    f"https://github.com/workavoidance/Skrivi/releases/download/{TAG}/{INSTALLER}"
 )
+STORE_URL = "https://apps.microsoft.com/detail/9P42NBXD8W36"
 
 
 def test_alpha_version_is_consistent_across_package_and_installer() -> None:
@@ -32,10 +30,14 @@ def test_alpha_version_is_consistent_across_package_and_installer() -> None:
     )
 
 
-def test_website_stays_on_previous_alpha_until_store_release_is_accepted() -> None:
+def test_website_offers_the_accepted_store_release_and_current_installer() -> None:
     website = (ROOT / "website" / "index.html").read_text(encoding="utf-8")
+    testing = (ROOT / "website" / "alpha" / "index.html").read_text(encoding="utf-8")
 
     assert website.count(PUBLIC_INSTALLER_URL) == 2
+    assert testing.count(PUBLIC_INSTALLER_URL) == 2
+    assert website.count(STORE_URL) == 2
+    assert testing.count(STORE_URL) == 2
 
 
 def test_readme_links_directly_to_current_alpha_installer() -> None:
