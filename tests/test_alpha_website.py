@@ -12,7 +12,9 @@ MAIN_SCRIPT = ROOT / "website" / "script.js"
 def test_alpha_page_has_current_install_feedback_and_school_paths() -> None:
     page = ALPHA_PAGE.read_text(encoding="utf-8")
 
-    assert "Skrivi-v0.2.0-alpha.3-windows-x64-setup.exe" in page
+    assert "Skrivi-v0.2.0-alpha.4-windows-x64-setup.exe" in page
+    assert "apps.microsoft.com/detail/9P42NBXD8W36" in page
+    assert "cid=skrivi-website-testing" in page
     assert 'href="../feedback/"' in page
     assert 'href="../#schools"' in page
     assert "SCHOOL_EXPLAINER_NB.md" in page
@@ -23,8 +25,8 @@ def test_alpha_page_is_explicit_about_early_release_and_privacy() -> None:
     page = ALPHA_PAGE.read_text(encoding="utf-8")
 
     assert "SmartScreen" in page
-    assert "ikke kodesignert ennå" in page
-    assert "not code-signed yet" in page
+    assert "ikke er kodesignert" in page
+    assert "not code-signed" in page
     assert "Ikke legg ut private elevopplysninger" in page
     assert "Do not post private student information" in page
 
@@ -54,6 +56,12 @@ def test_alpha_guide_includes_stable_visual_settings_walkthrough() -> None:
 
 def test_main_site_links_to_alpha_guide() -> None:
     script = MAIN_SCRIPT.read_text(encoding="utf-8")
+    page = (ROOT / "website" / "index.html").read_text(encoding="utf-8")
 
     assert "alpha/" in script
     assert "Test Skrivi" in script
+    assert "Skrivi-v0.2.0-alpha.4-windows-x64-setup.exe" in page
+    assert "apps.microsoft.com/detail/9P42NBXD8W36" in page
+    assert "cid=skrivi-website-home" in page
+    assert "Installer fra Microsoft Store" in page
+    assert "Get it from Microsoft Store" in page

@@ -123,6 +123,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
   gap: 12px;
 }
 
+.hero-text-link {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  padding: 0 8px;
+  color: var(--muted);
+  font-weight: 720;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .button {
   display: inline-flex;
   min-height: 52px;
@@ -495,6 +506,18 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-size: .9rem;
   color: rgba(24,24,23,.72);
 }
+.download-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.download-text-link {
+  color: var(--ink);
+  font-size: .92rem;
+  font-weight: 760;
+  text-underline-offset: 4px;
+}
 
 .site-footer {
   min-height: 140px;
@@ -512,7 +535,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .statement-grid,
   .technical-grid { grid-template-columns: 1fr; gap: 36px; }
   .download-inner { grid-template-columns: auto 1fr; }
-  .download-inner .button { grid-column: 1 / -1; justify-self: start; }
+  .download-inner .download-actions { grid-column: 1 / -1; }
 }
 
 @media (max-width: 680px) {
@@ -530,7 +553,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .statement-section { padding: 84px 0; }
   .download-section { padding: 64px 0; }
   .download-inner { grid-template-columns: 1fr; }
-  .download-inner .button { grid-column: auto; }
+  .download-inner .download-actions { grid-column: auto; }
   .site-footer { flex-direction: column; align-items: flex-start; justify-content: center; padding-block: 36px; }
   .footer-links { flex-wrap: wrap; gap: 12px 20px; }
   .technical-list div { grid-template-columns: 1fr; gap: 6px; }
