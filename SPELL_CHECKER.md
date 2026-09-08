@@ -6,5 +6,6 @@ The spell-checker work is intentionally separate from the current push-to-talk d
 
 - [Spell-checker research area](docs/spell-checker/README.md)
 - [Norwegian dyslexia dataset research report](docs/spell-checker/NORWEGIAN_DYSLEXIA_DATASET_RESEARCH.md)
+- [Provenance-aware benchmark format](docs/spell-checker/BENCHMARK_FORMAT.md)
 
 The proposed checker should keep processing local, preserve the writer's authorship, and make word-level suggestions rather than silently rewriting sentences.
