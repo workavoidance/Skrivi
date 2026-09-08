@@ -1,0 +1,27 @@
+{
+  "platform": "Linux CPU, 4 threads. Not a Windows or female-voice quality test.",
+  "results": [
+    {
+      "test": "seed42",
+      "generation_s": 16.799056696007028,
+      "audio_s": 3.24,
+      "sample_rate": 48000,
+      "sha256": "dd3ac9df583c344d83579be1238ca824552506b8429b615c2ce5ff492ce3d687"
+    },
+    {
+      "test": "seed123",
+      "generation_s": 13.987934365010005,
+      "audio_s": 3.08,
+      "sample_rate": 48000,
+      "sha256": "ae051056b8de6b46c9418f7cec0829f1256395deb4e4faf2cdcfa9f37900d294"
+    },
+    {
+      "test": "reference",
+      "generation_s": 24.82049595800345,
+      "audio_s": 2.92,
+      "sample_rate": 48000,
+      "sha256": "e5f1cff519de2bfbe44d7ce5e696cb18776acc6c532855336faf6bef9aa1200b"
+    }
+  ],
+  "peak_rss_bytes": 3139182592
+}

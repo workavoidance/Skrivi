@@ -1,0 +1,12 @@
+{
+  "platform": "Linux x86-64 CPU; not Windows",
+  "threads": 4,
+  "load_seconds": 1.0052948520024074,
+  "generation_seconds": 16.53226687500137,
+  "audio_seconds": 3.24,
+  "sample_rate": 48000,
+  "real_time_factor": 5.102551504630052,
+  "audio_seconds_per_second": 0.19598038336165752,
+  "peak_child_rss_kib": 2536652,
+  "peak_child_rss_bytes": 2597531648
+}

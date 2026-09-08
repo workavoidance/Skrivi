@@ -1,0 +1,23 @@
+{
+  "model": "openbmb/VoxCPM2",
+  "conversion": "cstr/voxcpm2-GGUF",
+  "revision": "d426b5da661d5f833b45663879b1a0b0573a5b8e",
+  "filename": "voxcpm2-q4_k.gguf",
+  "bytes": 1689498432,
+  "sha256": "502efe74f6a59c370b3abf5a3fcfd7c3955ca6c167b411c8aee3977e9e46c079",
+  "runtime": "https://github.com/CrispStrobe/CrispASR",
+  "license": "Apache-2.0",
+  "voice_instruction": "An adult Norwegian woman with a clear Oslo accent, speaking naturally at a normal conversational pace.",
+  "validation": "Download integrity only; local Norwegian synthesis and Windows compatibility are not yet tested.",
+  "runtime_source_revision": "5baf533c9f5038226b4af1cd6bde3454d6bf9316",
+  "windows_runtime": {
+    "name": "CrispASR",
+    "version": "v0.8.32",
+    "filename": "crispasr-windows-x86_64-cpu.zip",
+    "bytes": 8261759,
+    "sha256": "ac8b6caf4dd448d00c5050907275bce4d154747110c37943aa4f69ee7fac9541",
+    "url": "https://github.com/CrispStrobe/CrispASR/releases/download/v0.8.32/crispasr-windows-x86_64-cpu.zip",
+    "cpu_requirement": "x86-64 with AVX2",
+    "validation": "Official release SHA-256 and ZIP integrity passed; executable not tested on Windows."
+  }
+}

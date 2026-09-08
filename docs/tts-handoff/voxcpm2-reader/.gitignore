@@ -1,0 +1,7 @@
+build/
+voices/wav/
+**/bin/
+**/obj/
+**/__pycache__/
+*.gguf
+*.part

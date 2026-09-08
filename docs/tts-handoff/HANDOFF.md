@@ -1,3 +1,5 @@
+> Later update: read [voxcpm2-reader/START_HERE.md](voxcpm2-reader/START_HERE.md) first. The public VoxCPM2 model has since been approved and built; the exact NbAiLab fine-tune is no longer required. The original text below is retained as historical context.
+
 # Norwegian Local TTS / Reader POC Handoff
 
 ## Purpose
